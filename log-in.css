@@ -1,0 +1,473 @@
+body {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Louis Vuitton Web","Helvetica Neue","Helvetica",Arial,sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Louis Vuitton Web","Helvetica Neue","Helvetica",Arial,sans-serif;
+    font-size: 14px;
+}
+.home-page {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    height: 950px;
+    background-color: white;
+}
+.task-bar {
+    width: 100%;
+    height: 125px;
+    position: sticky;
+    z-index: 100;
+    top: 0%;
+    display: grid;
+    grid-template-columns: 630px 100px auto;
+    grid-template-rows: 65px 40px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.left {
+    width: 100%;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    top: 0%;
+    border-bottom: 1px solid black;
+}
+.right {
+    width: 100%;
+    position: relative;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    top: 0%;
+    border-bottom: 1px solid black;
+}
+.info {
+    width: 30%;
+    position: relative;
+    top: 0%;
+    height: 80%;
+    margin-left: 65%;
+}
+.info ul {
+    display: flex;
+    list-style-type: none;
+}
+.search-bar {
+    width: 85%;
+    position: absolute;
+    display: flex;
+    top: 7%;
+    left: 14%;
+}
+.search {
+    width: 60%;
+    position: relative;
+    margin-left: 10%;
+    top: 0%;
+    grid-column: 2/3;
+    background-color: #eff0f1;
+    height: 100px;
+}
+.bar {
+    background-color: white ;
+    width: 100%;
+    border: 1px solid gray;
+    border-right: none;
+    height: 30px;
+    outline: none;
+}
+.search-button {
+    width: 20%;
+    position: relative;
+    right: 15%;
+    background-color: white;
+    border: 1px solid gray;
+    border-left: none;
+    box-shadow: none;
+    color: #1874CD;
+}
+#khuyenmai {
+    position: relative;
+    top: 28%;
+    width: 80%;
+    height: 40px;
+    left: 14%;
+    padding: 2px;
+    font-family: "Louis Vuitton Web","Helvetica Neue","Helvetica",Arial,sans-serif;
+}
+#lienhe {
+    position: relative;
+    top: 40%;
+    width: 100%;
+    left: 0%;
+    height: 33px;
+    background-color: #A0522D;
+    font-family: "Louis Vuitton Web","Helvetica Neue","Helvetica",Arial,sans-serif;
+}
+.center {
+    width: 100%;
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+#logo {
+    width: 100%;
+    position: relative;
+}
+.nav {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1030px auto;
+}
+.list {
+    width: 100%;
+    height: 50px;
+    grid-column: 1/2;
+    position: relative;
+    margin-top: 1%;
+}
+.list a {
+    font-size: 14px;
+}
+.list ul li {
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+    color: black;
+    padding: 7px;
+    margin-left: 4%;
+}
+.list ul li a:hover {
+    color: #A0522D;
+}
+/* .list a::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: white;
+    top: 80%;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.list a:hover::after {
+    transform: scaleX(1);
+} */
+.menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 110%;
+    margin-left: -50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.menu ul li {
+    width: 130px;
+    background-color: white;
+    padding: 15px;
+    line-height: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.menu a {
+    position: relative;
+}
+/* .menu a::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: white;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.menu a:hover::after {
+    transform: scaleX(1);
+} */
+.menu ul {
+    position: absolute;
+    margin-left: 0%;
+}
+#menu-1 {
+    margin-left: -75%;
+}
+#menu-1 ul li {
+    width: 150%;
+}
+#menu-2 {
+    margin-left: -45%;
+}
+#menu-2 ul li {
+    width: 200%;
+}
+#menu-3 {
+    margin-left: -100%;
+}
+#menu-3 ul li {
+    width: 200%;
+}
+.list li:hover .menu {
+    display: block;
+}
+#submenu {
+    width: 120%;
+    display: none;
+    position: absolute;
+    background-color: #1874CD;
+    top: 0%;
+    margin-left: 59%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#submenu ul li {
+    width: 120%;
+}
+.menu li:hover #submenu {
+    display: block;
+}
+.background {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url(background-greysuit.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.main-board {
+    width: 100%;
+}
+.login-board {
+    width: 100%;
+    background-color: white;
+    height: 300px;
+    text-align: center;
+}
+.dang-nhap {
+    width: 35%;
+    height: 400px;
+    padding: 12px;
+    text-align: center;
+    display: inline-block;
+    /* background-color: red; */
+    /* box-shadow: 5px 10px 5px #aaaaaa; */
+    /* background-color: #FFEFD5; */
+}
+#username {
+    width: 70%;
+    margin-top: 3%;
+    padding: 10px;
+    height: 20px;
+}
+#password {
+    width: 70%;
+    padding: 10px;
+    margin-top: 3%;
+    height: 20px;
+}
+#submit {
+    width: 76.5%;
+    margin-top: 3%;
+    height: 35px;
+    color: white;
+    background-color: #A0522D;
+    border: none;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.footer-login {
+    position: relative;
+    margin-top: 2%;
+}
+.messenger {
+    background-color: #256fef;
+    position: fixed;
+    border-radius: 100%;
+    z-index: 80;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    top: 90%;
+    left: 97%;
+}
+.footer {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    margin-top: 0%;
+    box-shadow: 0 -5px 3px -3px #888888;
+}
+.details {
+    width: 100%;
+    height: 248px;
+    display: grid;
+    grid-template-columns: 300px 750px auto;
+}
+.about-company {
+    grid-column: 1/2;
+}
+.info-company {
+    font-size: 14px;
+    position: relative;
+    margin-left: 5%;
+}
+.foot {
+    background-color: black;
+    color: white;
+    height: 32px;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+.about-service {
+    grid-column: 2/3;
+}
+.service {
+    float: left;
+}
+.service ul {
+    list-style-type: none;
+    line-height: 25px;
+    position: relative;
+    margin-left: -10%;
+}
+.service a {
+    color: black;
+    font-size: 12px;
+    position: relative;
+    display: block;
+}
+.service a::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: black;
+    top: 90%;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.service a:hover::after {
+    transform: scaleX(1);
+}
+.product {
+    width: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row: 50px auto;
+    position: relative;
+    margin-top: 2.7%;
+}
+.product ul {
+    list-style-type: none;
+
+}
+.product ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: 5%;
+}
+.product ul li a {
+    color: black;
+    font-size: 12px;
+}
+.footer-list ul li {
+    display: flex;
+}
+.footer-title {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    width: 100%;
+}
+.footer-list {
+    grid-row: 2/3;
+    position: relative;
+}
+.footer-list ul {
+    line-height: 28px;
+    position: relative;
+    margin-top: 2%;
+}
+.footer-list ul li {
+    position: relative;
+    margin-left: -12%;
+}
+.footer-list a {
+    position: relative;
+    display: block;
+}
+.footer-list a::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: black;
+    top: 84%;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.footer-list a:hover::after {
+    transform: scaleX(1);
+}
+#footer-list-1 {
+    grid-column: 1/2;
+    margin-left: 0%;
+}
+#footer-list-2 {
+    grid-column: 2/3;
+}
+#footer-list-3 {
+    grid-column: 3/4;
+}
+#footer-list-4 {
+    grid-column: 4/5;
+}
+.about-contact {
+    grid-column: 3/4;
+    background-color: lightgray;
+    height: 80%;
+}
+.contact {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid silver;
+}
+.contact a {
+    color: black;
+    font-size: 30px;
+    margin-left: 5%;
+}
+.sub-login {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+.login 
+{
+    margin-top: 5%;
+    /* background-color: red; */
+}
+.login-bar {
+    height: 32px;
+    border: 1px solid silver;
+    outline: none;
+}
+.submit-button {
+    height: 34px;
+    background-color: black;
+    color: white;
+    margin-left: -20%;
+}
